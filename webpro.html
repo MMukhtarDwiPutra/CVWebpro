@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tugas Webpro CV</title>
+		<link rel="stylesheet" type="text/css" href="webpro.css">
+	</head>
+  <div class = "main" id = "atas">
+    <div id = "header">
+      <p>Curiculum Vitae</p>
+    </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'DIRI')">Data Diri</button>
+      <button class="tablinks" onclick="openTab(event, 'DATA PENDIDIKAN')">Data Pendidikan</button>
+      <button class="tablinks" onclick="openTab(event, 'PENGALAMAN ORGANISASI')">Pengalaman Organisasi</button>
+      <button class="tablinks" onclick="openTab(event, 'KEMAMPUAN')">Kemampuan</button>
+      <button class="tablinks" onclick="openTab(event, 'MINAT')">Minat</button>
+    </div>
+  </div>
+
+  <div id="DATA PENDIDIKAN" class="tabcontent">
+    <h3>Data Pendidikan</h3>
+    <p>
+      <img src="TK.jpg" height = "20%" width="20%" id="fotoTk"><br>
+      <b>2004 – 2005 : </b>TK Kartika Jambi<br>
+      <img id = "fotoSd" src="sd.png" width="10%" height = "10%"><br>
+      <b>2005 – 2007 : </b>SDN Kartika Jambi<br>
+      <b>2007 - 2010 : </b>SDN 2 Merangin<br>
+      <b>2010 – 2011 : </b>SDN 206 Kota Jambi<br>
+      <img id = "fotoSmp" src="SMP.gif" width = "10%"" height ="10%"><br>
+      <b>2011 – 2014 : </b>SMPN 1 Kota Jambi<br>
+      <img id = "fotoSma" src="sma1.jpeg" width=10% height = "10%"><br>
+      <b>2014 – 2017 : </b>SMAN 1 Kota Jambi<br>
+    </p>
+  </div>
+
+  <div id="DIRI" class="tabcontent">
+    <h3>Muhammad Mukhtar Dwi Putra</h3>
+    <img id = "fotoP" src="foto.jpg" height="25%" width="25%">
+    <p> Nama saya adalah Muhammad Mukhtar Dwi Putra. Saya lahir di Banjarmasin pada tanggal 16 Juni 2000 dan saat ini berusia 18 tahun. Saya memeluk agama islam. Tinggi badan saya 165 cm dan berat saya berkisar 55 Kg. Alamat saya di Bandung yaitu Perumahan Buah Batu blok C nomor 57.
+    </p>
+  </div>
+
+
+
+  <div id="PENGALAMAN ORGANISASI" class="tabcontent">
+    <h3>Pengalaman Organisasi</h3>
+    <p>
+    <img id = "fotoOsis" src="OSIS.png" height="10%" width = "10%"><br>
+    <b>2014 : </b>Anggota OSIS 2014/2015 SMAN 1 Kota Jambi</p>
+  </div>
+
+   <div id="KEMAMPUAN" class="tabcontent">
+    <h3>Kemampuan</h3>
+
+      <z>Java</z>
+      <div class="container">
+        <div class="skills java">80%</div>
+      </div>
+
+      <z>C++</z>
+      <div class="container">
+        <div class="skills cpp">65%</div>
+      </div>
+
+      <z>Android Studio</z>
+      <div class="container">
+        <div class="skills AndroidStudio">40%</div>
+      </div>
+
+      <z>HTML</z>
+      <div class="container">
+        <div class="skills HTML">50%</div>
+      </div>
+  </div>
+
+  <div id="MINAT" class = "tabcontent">
+    <h3>Minat</h3>
+        <p>
+          <img id = "fotoAi" src="AI.jpg" width="25%" height="25%"><br>
+          <b>Artificial Intelligence</b><br>
+          <img id = "fotoAnd" src="android.png" width="25%" height="25%"><br>
+          <b>Android Developer</b><br>
+        </p>
+  </div>
+
+  <div class = "footer">
+    <p>
+      Handphone : 081313086200<br>
+      E-mail : putra16.mp@gmail.com
+    </p>
+  </div>
+
+  <script>
+  function openTab(evt, tab) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tab).style.display = "block";
+    if(tab=="DATA PENDIDIKAN" || tab == "MINAT"){
+      document.getElementById(tab).style.textAlign = "center";
+    }
+    evt.currentTarget.className += " active";
+  }
+  </script>
+	</body>
+</html>
